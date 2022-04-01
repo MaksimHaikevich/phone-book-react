@@ -38,7 +38,7 @@ export function Element() {
             <div className="wrapper">
                 {members
                     .filter((member) => {
-                        return member.secondName.toLowerCase().includes(searchValue) && member.department.includes(selectedDepartment);
+                        return Object.values(member).some((value) => typeof value === 'string' && value.toLowerCase().includes(searchValue)) && member.department.includes(selectedDepartment);
                     })
                     .map((member) => {
                         console.log(member);
