@@ -1,0 +1,78 @@
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  background: rgba(22, 44, 78, 0.6);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+
+
+  &__content {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 25px;
+    text-align: center;
+    width: 70%;
+    height: 50vh;
+    background: #FFFFFF;
+    border: 1px solid rgba(19, 89, 120, 0.07);
+    border-radius: 2px;
+
+    form {
+      display: flex;
+    }
+
+    .close__btn {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 15px;
+
+      button {
+        background: #FFFFFF;
+        border: 0;
+        cursor: pointer;
+      }
+    }
+
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: center;
+
+      .field {
+        display: block;
+        height: 80px;
+        margin-left: 20px;
+
+        .select__label {
+          margin: 5px 0;
+        }
+
+        .select {
+          width: 190px;
+        }
+      }
+    }
+
+    .btn-s {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-direction: column;
+
+      .add__btn {
+        display: flex;
+        justify-content: flex-end;
+        height: 50px;
+
+        &:hover {
+          background: rgba(34, 133, 62, 0.4);
+        }
+      }
+    }
+  }
+}

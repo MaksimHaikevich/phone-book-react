@@ -1,0 +1,36 @@
+
+.header {
+  margin: 30px;
+  justify-content: space-around;
+  margin-bottom: 150px;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    .search {
+      width: 75%;
+
+      &__bar {
+        width: 80%;
+        margin-right: 50px;
+        font-size: 14px;
+      }
+
+      .departments {
+        &__label {
+          margin-bottom: 35px;
+        }
+
+        &__select {
+          height: 45px;
+          width: 200px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+
